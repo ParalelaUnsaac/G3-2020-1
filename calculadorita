@@ -1,0 +1,109 @@
+/ * Este archivo es generado por un generador de código * /
+
+# incluye  " tkc / mem.h "
+# incluye  " tkc / utils.h "
+# incluya  " mvvm / base / utils.h "
+# include  " calculator_view_model.h "
+
+static  ret_t  calculator_view_model_set_prop ( object_t * obj, const  char * name, const  value_t * v) {
+  Calculadora * aCalculadora = (( calculadora_vista_modelo_t *) (obj)) -> aCalculadora ;
+
+  if ( tk_str_ieq ( " expr " , nombre)) {
+    aCalculadora-> expr = value_str (v);
+
+    return RET_OK;
+  }
+
+  return RET_NOT_FOUND;
+}
+
+static  ret_t  calculator_view_model_get_prop ( object_t * obj, const  char * name, value_t * v) {
+  Calculadora * aCalculadora = (( calculadora_vista_modelo_t *) (obj)) -> aCalculadora ;
+
+  if ( tk_str_ieq ( " expr " , nombre)) {
+    value_set_str (v, aCalculator-> expr . c_str ());
+    return RET_OK;
+  }
+
+  return RET_NOT_FOUND;
+}
+
+static  bool_t  calculator_view_model_can_exec ( object_t * obj, const  char * name, const  char * args) {
+  calculator_view_model_t * vm = ( calculator_view_model_t *) (obj);
+  Calculadora * aCalculator = vm-> aCalculator ;
+  if ( tk_str_ieq ( " add_char " , nombre)) {
+    devuelve  VERDADERO ;
+
+  } else  if ( tk_str_ieq ( " remove_char " , name)) {
+    return aCalculadora-> CanRemoveChar ();
+
+  } else  if ( tk_str_ieq ( " Eval " , nombre)) {
+    return aCalculadora-> CanEval ();
+  }
+  return  FALSE ;
+}
+
+static  ret_t  calculator_view_model_exec ( object_t * obj, const  char * name, const  char * args) {
+  calculator_view_model_t * vm = ( calculator_view_model_t *) (obj);
+  Calculadora * aCalculator = vm-> aCalculator ;
+  if ( tk_str_ieq ( " add_char " , nombre)) {
+    return aCalculadora-> AddChar (args [ 0 ]);
+
+  } else  if ( tk_str_ieq ( " remove_char " , name)) {
+    return aCalculadora-> RemoveChar ();
+
+  } else  if ( tk_str_ieq ( " Eval " , nombre)) {
+    return aCalculadora-> Eval ();
+  }
+  return RET_NOT_FOUND;
+}
+
+static  ret_t  calculator_view_model_on_destroy ( object_t * obj) {
+  calculator_view_model_t * vm = ( calculator_view_model_t *) (obj);
+  return_value_if_fail (vm! = NULL , RET_BAD_PARAMS);
+
+  eliminar (vm-> aCalculator );
+
+  return  view_model_deinit ( VIEW_MODEL (obj));
+}
+
+static  const  object_vtable_t s_calculator_view_model_vtable = { " calculator_view_model_t " ,
+                                                               " calculator_view_model_t " ,
+                                                               sizeof ( calculator_view_model_t ),
+                                                               FALSO ,
+                                                               calculator_view_model_on_destroy,
+                                                               NULO ,
+                                                               calculator_view_model_get_prop,
+                                                               calculator_view_model_set_prop,
+                                                               NULO ,
+                                                               NULO ,
+                                                               calculator_view_model_can_exec,
+                                                               calculator_view_model_exec};
+
+view_model_t * calculator_view_model_create_with (Calculadora * aCalculator) {
+  object_t * obj = object_create (& s_calculator_view_model_vtable);
+  view_model_t * vm = view_model_init ( VIEW_MODEL (obj));
+  calculator_view_model_t * calculator_view_model = ( calculator_view_model_t *) (vm);
+
+  return_value_if_fail (vm! = NULL , NULL );
+
+  calculator_view_model-> aCalculator = aCalculator;
+
+  return vm;
+}
+
+ret_t  calculator_view_model_attach ( view_model_t * vm, Calculator * aCalculator) {
+  calculator_view_model_t * calculator_view_model = ( calculator_view_model_t *) (vm);
+  return_value_if_fail (vm! = NULL , RET_BAD_PARAMS);
+
+  calculator_view_model-> aCalculator = aCalculator;
+
+  return RET_OK;
+}
+
+view_model_t * calculator_view_model_create ( navigator_request_t * req) {
+  Calculadora * aCalculadora = nueva  Calculadora ();
+  return_value_if_fail (aCalculator! = NULL , NULL );
+
+  return  calculator_view_model_create_with (aCalculator);
+}
