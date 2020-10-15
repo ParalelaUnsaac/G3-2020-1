@@ -1,5 +1,5 @@
-
-
+!find / -iname 'libdevice'
+!find / -iname 'libnvvm.so'
 import os
 os.environ['NUMBAPRO_LIBDEVICE'] = "/usr/local/cuda-10.0/nvvm/libdevice"
 os.environ['NUMBAPRO_NVVM'] = "/usr/local/cuda-10.0/nvvm/lib64/libnvvm.so"
