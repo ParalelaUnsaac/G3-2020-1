@@ -23,4 +23,4 @@ from numba import vectorize
 @vectorize(['float32(float32)'], target='cuda')
 def gpu_sqrt(x):
     return math.sqrt(x)
-
+cpu_sqrt(x)
