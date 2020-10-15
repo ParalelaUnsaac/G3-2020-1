@@ -9,7 +9,7 @@ npoints = int(1e7)
 a = np.arange(npoints, dtype=np.float32)
 
 import math
-from numba import vectorize 
+from numba import vectorize
 
 @vectorize
 def cpu_sqrt(x):
@@ -24,3 +24,13 @@ from numba import vectorize
 def gpu_sqrt(x):
     return math.sqrt(x)
 cpu_sqrt(x)
+import math
+from numba import vectorize
+
+@vectorize(['float32(float32)'], target='cuda')
+def gpu_sqrt(x):
+    return math.sqrt(x)
+gpu_sqrt(a)
+%timeit gpu_sqrt(a)
+%timeit np.sqrt(a)
+%timeit cpu_sqrt(a)
