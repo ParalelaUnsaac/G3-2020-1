@@ -1,8 +1,20 @@
-!find / -iname 'libdevice'
-!find / -iname 'libnvvm.so'
+import math
+import timeit
 import os
+import numpy as np
 os.environ['NUMBAPRO_LIBDEVICE'] = "/usr/local/cuda-10.0/nvvm/libdevice"
 os.environ['NUMBAPRO_NVVM'] = "/usr/local/cuda-10.0/nvvm/lib64/libnvvm.so"
+
+
+x = np.arange(10)
+x**2
+
+np.exp(x)
+
+import math
+x = np.arange(int(1e6))
+timeit.timeit(np.sqrt(x))
+timeit.timeit([math.sqrt(xx) for xx in x])
 
 import numpy as np
 npoints = int(1e7)
@@ -31,6 +43,6 @@ from numba import vectorize
 def gpu_sqrt(x):
     return math.sqrt(x)
 gpu_sqrt(a)
-%timeit gpu_sqrt(a)
-%timeit np.sqrt(a)
-%timeit cpu_sqrt(a)
+timeit.timeit(gpu_sqrt(a))
+timeit.timeit(np.sqrt(a))
+timeit.timeit(cpu_sqrt(a))
