@@ -43,6 +43,6 @@ from numba import vectorize
 def gpu_sqrt(x):
     return math.sqrt(x)
 gpu_sqrt(a)
-timeit.timeit(gpu_sqrt(a))
-timeit.timeit(np.sqrt(a))
-timeit.timeit(cpu_sqrt(a))
+timeit.timeit("gpu_sqrt(a)")
+timeit.timeit("np.sqrt(a)")
+timeit.timeit("cpu_sqrt(a)")
