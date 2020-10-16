@@ -1,2 +1,6 @@
 7 Oct - en clase hicimos los proyectos y sus GitHub
 14Oct - no hay contribuciones en el proyecto. no hay problema ni documentacion
+15Oct - los integrantes del grupo estuvimos discutiendo de proyecto
+15Oct - se dividio las asignaciones entre los alumnos asi como el codigo y algunas investigaciones como el timeit
+15Oct - algunos integrantes estuvimos viendo tutoriales sobre el github
+16Oct - esperando a los integrantes con los aportes
