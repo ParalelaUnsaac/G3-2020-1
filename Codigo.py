@@ -32,17 +32,4 @@ cpu_sqrt(x)
 import math
 from numba import vectorize
 
-@vectorize(['float32(float32)'], target='cuda')
-def gpu_sqrt(x):
-    return math.sqrt(x)
-cpu_sqrt(x)
-import math
-from numba import vectorize
 
-@vectorize(['float32(float32)'], target='cuda')
-def gpu_sqrt(x):
-    return math.sqrt(x)
-gpu_sqrt(a)
-timeit.timeit(gpu_sqrt(a))
-timeit.timeit(np.sqrt(a))
-timeit.timeit(cpu_sqrt(a))
