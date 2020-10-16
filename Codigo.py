@@ -13,7 +13,7 @@ np.exp(x)
 
 import math
 x = np.arange(int(1e6))
-timeit.timeit(np.sqrt(x))
+timeit.timeit np.sqrt(x)
 timeit.timeit([math.sqrt(xx) for xx in x])
 
 import numpy as np
