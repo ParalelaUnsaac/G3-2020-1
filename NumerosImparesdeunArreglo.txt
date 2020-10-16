@@ -41,3 +41,36 @@ __global__ void countOdds(int* d, int N, int* odds)
     if (localID == 0)
         atomicAdd(odds, count[0]);
 }
+//------------------------------------
+int sharedSize(int b)
+{
+    return b * sizeof(int);
+}
+
+//------------------------------------
+
+int main(int argc, char** argv)
+{
+    
+    int N = 5000;
+    int* ha, * hres, * da, * dres;   // punteros host (h*) y device (d*)
+
+    ha = new int[N];
+    hres = new int[1];
+
+    cudaMalloc((void**)&da, sizeof(int) * N);
+    cudaMalloc((void**)&dres, sizeof(int) * 1);
+
+    numberGen(N, MAXVALUE, ha);
+
+    cudaMemcpy(da, ha, sizeof(int) * N, cudaMemcpyHostToDevice);
+    cudaMemset(dres, 0, sizeof(int));
+
+    int blockSize, gridSize;
+    cudaOccupancyMaxPotentialBlockSizeVariableSMem(&gridSize, &blockSize, (void*)countOdds, sharedSize, N);
+
+    gridSize = ceil(1.0 * N / blockSize);
+    printf("Grid : %i    Block : %i\n", gridSize, blockSize);
+    countOdds << < gridSize, blockSize, blockSize * sizeof(int) >> > (da, N, dres);
+
+    cudaMemcpy(hres, dres, sizeof(int), cudaMemcpyDeviceToHost);
