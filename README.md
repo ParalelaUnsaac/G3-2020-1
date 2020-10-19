@@ -29,7 +29,7 @@
 ---
 ## Empezamos... 🚀
 
-.
+.Programa que cuenta los numeros impares generados dentro de un arreglo 
 
 ### Construido con... 🛠️
 
@@ -45,6 +45,7 @@
 
 _Para poder programar en cuda primero tenemos que ejecutar una serie de instrucciones en nuestro mismo colab haciendo un copia y pega .
 
+```py
 !apt-get --purge remove cuda nvidia* libnvidia-*
 !dpkg -l | grep cuda- | awk '{print $2}' | xargs -n1 dpkg --purge
 !apt-get remove cuda-*
@@ -59,7 +60,7 @@ _Para poder programar en cuda primero tenemos que ejecutar una serie de instrucc
 !pip install git+git://github.com/andreinechaev/nvcc4jupyter.git
 %load_ext nvcc_plugin
 
-
+```
 
 
 
