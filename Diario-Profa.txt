@@ -1,0 +1,1 @@
+21 - Oct. GitHub ok. Reuso de codigo. Documentacion de diagrama (dependencia de modulos) falta. CUDA planificación falta. No tienen referencias. No tiene comentario de códigos. 
