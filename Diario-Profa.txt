@@ -1,3 +1,4 @@
 7 Oct - en clase hicimos los proyectos y sus GitHub
 14Oct - no hay contribuciones en el proyecto. no hay problema ni documentacion
 21 - Oct. GitHub ok. Reuso de codigo. Documentacion de diagrama (dependencia de modulos) falta. CUDA planificación falta. No tienen referencias. No tiene comentario de códigos. 
+28 Oct: github (por revisar). Corre su proyecto, incluso con muchos datos. no hay planificacion. Codigo con comentarios. variables no estan bien nombradas
