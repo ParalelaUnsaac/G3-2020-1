@@ -22,7 +22,7 @@
 - **Deza Condori Rosmel Uriel** - _GitHub Account_ - [RosmelGDeza](https://github.com/RosmelGDeza)
 - **Guevara Ferro Cristian** - _GitHub Account_ - [Cristian1938](https://github.com/cristian1938)
 - **Holguin Josh** - _GitHub Account_ - [Josh](https://github.com/JoshYts)
-- **Ore Gamarra Abraham Benjamin** - _GitHub Account_ - []()
+- **Ore Gamarra Abraham Benjamin** - _GitHub Account_ - [benjaminx321](https://github.com/benjaminx321)
 - **Rojas Garay Jafet Caleb** - _GitHub Account_ - [JafetCaleb](https://github.com/JafetCaleb)
 - **Sullca Peralta Melanie Indira** - _GitHub Account_ - [Melanie279](https://github.com/Melanie279)
 
