@@ -1,4 +1,5 @@
-7 Oct - en clase hicimos los proyectos y sus GitHub
-14Oct - no hay contribuciones en el proyecto. no hay problema ni documentacion
-21 - Oct. GitHub ok. Reuso de codigo. Documentacion de diagrama (dependencia de modulos) falta. CUDA planificación falta. No tienen referencias. No tiene comentario de códigos. 
+7 Oct : en clase hicimos los proyectos y sus GitHub
+14Oct : no hay contribuciones en el proyecto. no hay problema ni documentacion
+21 Oct: GitHub ok. Reuso de codigo. Documentacion de diagrama (dependencia de modulos) falta. CUDA planificación falta. No tienen referencias. No tiene comentario de códigos. 
 28 Oct: github (por revisar). Corre su proyecto, incluso con muchos datos. no hay planificacion. Codigo con comentarios. variables no estan bien nombradas. Cuda seleccionado por mayor rendimiento (pero no hay comparacion). No hay diagramas.
+29 Oct. Github: todos contribuyeron, excepto Valdez. Diario de campo: no hay. Documentacion sin sumario. Tablas sin referencias. No hay cambios sobre lo observado el dia 28
