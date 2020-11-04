@@ -41,6 +41,27 @@
 ### Diagrama de flujo 
 -Se desarrollo un diagrama de flujo para entender mejor el problema y asi desarrollar el programa.
     ![Untitled Diagram-Page-1](https://user-images.githubusercontent.com/72477028/98139588-5e3c4a00-1e92-11eb-93af-ad43c49bb068.jpg)
+    
+## Despliegue 📦
+
+_Para poder programar en cuda primero tenemos que ejecutar una serie de instrucciones en nuestro mismo colab haciendo un copia y pega .
+
+```py
+!apt-get --purge remove cuda nvidia* libnvidia-*
+!dpkg -l | grep cuda- | awk '{print $2}' | xargs -n1 dpkg --purge
+!apt-get remove cuda-*
+!apt autoremove
+!apt-get update
+
+!wget https://developer.nvidia.com/compute/cuda/9.2/Prod/local_installers/cuda-repo-ubuntu1604-9-2-local_9.2.88-1_amd64 -O cuda-repo-ubuntu1604-9-2-local_9.2.88-1_amd64.deb
+!dpkg -i cuda-repo-ubuntu1604-9-2-local_9.2.88-1_amd64.deb
+!apt-key add /var/cuda-repo-9-2-local/7fa2af80.pub
+!apt-get update
+!apt-get install cuda-9.2
+!pip install git+git://github.com/andreinechaev/nvcc4jupyter.git
+%load_ext nvcc_plugin
+
+```
 ## Codificacion del programa 📄
 ```py
 %%cu
