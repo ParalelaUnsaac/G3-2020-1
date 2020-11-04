@@ -40,7 +40,7 @@
 - Editor: [Visual Studio Code](https://code.visualstudio.com/)
 ### Diagrama de flujo 
 -Se desarrollo un diagrama de flujo para entender mejor el problema y asi desarrollar el programa.
-**<center>
+<center>
     ![Untitled Diagram-Page-1](https://user-images.githubusercontent.com/72477028/98139588-5e3c4a00-1e92-11eb-93af-ad43c49bb068.jpg)
 ## Codificacion del programa 📄
 ```py
