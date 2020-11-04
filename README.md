@@ -181,10 +181,19 @@ int main(int argc, char** argv)
 
 ```
 
-
 ## Colaboratory 📖
 
 No tenemos un wiki :( ... pero puedes ver mas sobre el proyecto en el archivo .ipynb, puedes acceder haciendo click [aqui Colab](https://colab.research.google.com/drive/1pC42W8I2eGt8ZEss9sjWhpHDtlFpy_k9#scrollTo=HDsNV972EYdX).
+
+## Expresiones de Gratitud 🎁
+
+- Comenta a otros sobre este proyecto 📢.
+- Agradecemos a todas las personas involucradas (nosotros) 🤓.
+- Esperamos les sea util, gracias por descargar.
+
+---
+
+⌨️ con ❤️ por [Grupo3] 😊
 
 
 
