@@ -167,26 +167,16 @@ int main(int argc, char** argv)
 No tenemos un wiki :( ... pero puedes ver mas sobre el proyecto en el archivo .ipynb, puedes acceder haciendo click [aqui Colab](https://colab.research.google.com/drive/1pC42W8I2eGt8ZEss9sjWhpHDtlFpy_k9#scrollTo=HDsNV972EYdX).
 
 
-## Despliegue 📦
 
-_Para poder programar en cuda primero tenemos que ejecutar una serie de instrucciones en nuestro mismo colab haciendo un copia y pega .
+## Expresiones de Gratitud 🎁
 
-```py
-!apt-get --purge remove cuda nvidia* libnvidia-*
-!dpkg -l | grep cuda- | awk '{print $2}' | xargs -n1 dpkg --purge
-!apt-get remove cuda-*
-!apt autoremove
-!apt-get update
+- Comenta a otros sobre este proyecto 📢.
+- Agradecemos a todas las personas involucradas (nosotros) 🤓.
+- Esperamos les sea util, gracias por descargar.
 
-!wget https://developer.nvidia.com/compute/cuda/9.2/Prod/local_installers/cuda-repo-ubuntu1604-9-2-local_9.2.88-1_amd64 -O cuda-repo-ubuntu1604-9-2-local_9.2.88-1_amd64.deb
-!dpkg -i cuda-repo-ubuntu1604-9-2-local_9.2.88-1_amd64.deb
-!apt-key add /var/cuda-repo-9-2-local/7fa2af80.pub
-!apt-get update
-!apt-get install cuda-9.2
-!pip install git+git://github.com/andreinechaev/nvcc4jupyter.git
-%load_ext nvcc_plugin
+---
 
-```
+⌨️ con ❤️ por [Grupo3] 😊
 
 
 
