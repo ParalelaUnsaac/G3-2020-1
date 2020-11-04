@@ -21,7 +21,7 @@
 
 - **Calderon Tintaya Fallcha Xiomara** - _GitHub Account_ - [Fallcha](https://github.com/Fallcha)
 - **Deza Condori Rosmel Uriel** - _GitHub Account_ - [RosmelGDeza](https://github.com/RosmelGDeza)
-- **Guevara Ferro Cristian** - _GitHub Account_ - [Cristian1938](https://github.com/cristian1938)
+- **Guevara Ferro Cristian Luis** - _GitHub Account_ - [Cristian1938](https://github.com/cristian1938)
 - **Holguin Josh** - _GitHub Account_ - [Josh](https://github.com/JoshYts)
 - **Ore Gamarra Abraham Benjamin** - _GitHub Account_ - [benjaminx321](https://github.com/benjaminx321)
 - **Rojas Garay Jafet Caleb** - _GitHub Account_ - [JafetCaleb](https://github.com/JafetCaleb)
