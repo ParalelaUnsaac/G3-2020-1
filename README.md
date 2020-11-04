@@ -1,3 +1,4 @@
+![Untitled Diagram-Page-1](https://user-images.githubusercontent.com/72477028/98139588-5e3c4a00-1e92-11eb-93af-ad43c49bb068.jpg)
 # **<center> 💻 G3 2020-I (ALGORITMOS PARALELOS Y DISTRIBUIDOS) 💻 </center>**
 
 ---
