@@ -21,7 +21,7 @@
 
 - **Calderon Tintaya Fallcha Xiomara** - _GitHub Account_ - [Fallcha](https://github.com/Fallcha)
 - **Deza Condori Rosmel Uriel** - _GitHub Account_ - [RosmelGDeza](https://github.com/RosmelGDeza)
-- **Guevara Ferro Cristian Luis** - _GitHub Account_ - [Cristian1938](https://github.com/cristian1938)
+- **Guevara Ferro Cristian** - _GitHub Account_ - [Cristian1938](https://github.com/cristian1938)
 - **Holguin Josh** - _GitHub Account_ - [Josh](https://github.com/JoshYts)
 - **Ore Gamarra Abraham Benjamin** - _GitHub Account_ - [benjaminx321](https://github.com/benjaminx321)
 - **Rojas Garay Jafet Caleb** - _GitHub Account_ - [JafetCaleb](https://github.com/JafetCaleb)
@@ -40,7 +40,6 @@
 - Editor: [Visual Studio Code](https://code.visualstudio.com/)
 ### Diagrama de flujo 
 -Se desarrollo un diagrama de flujo para entender mejor el problema y asi desarrollar el programa.
-<center>
     ![Untitled Diagram-Page-1](https://user-images.githubusercontent.com/72477028/98139588-5e3c4a00-1e92-11eb-93af-ad43c49bb068.jpg)
 ## Codificacion del programa 📄
 ```py
