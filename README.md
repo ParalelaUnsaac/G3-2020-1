@@ -40,6 +40,10 @@
 
 ## Codificacion del programa 📄
 
+## Wiki 📖
+
+No tenemos un wiki :( ... pero puedes ver mas sobre el proyecto en el archivo .ipynb, puedes acceder haciendo click [aqui Wiki](https://colab.research.google.com/drive/1pC42W8I2eGt8ZEss9sjWhpHDtlFpy_k9#scrollTo=HDsNV972EYdX).
+
 
 ## Despliegue 📦
 
